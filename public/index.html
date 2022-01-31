@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Dari Indonesia Untuk Dunia – Batik Discover</title>
+
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+
+<body class="font-sans">
+    <canvas class="grain"></canvas>
+
+    <div class="loader">
+        <div class="text">
+            Loading . . .
+        </div>
+    </div>
+
+    <nav class="navbar font-display difference">
+        <a href="/" class="logo">
+            <div class="text-2xl text-loose">Batik</div>
+            <div class="text-xs font-sans text-looser uppercase">DISCOVER</div>
+        </a>
+        <div class="links">
+            <ul class="flex">
+                <li><a class="link active">Beranda</a></li>
+                <li><a href="/teknik" class="link">Teknik</a></li>
+                <li><a href="/kota" class="link">Kota</a></li>
+                <li><a href="/motif" class="link">Motif</a></li>
+                <li><a href="/tentang" class="link">Tentang</a></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <a class="menu-open link" onclick="openMenu()">Menu</a>
+            <a class="menu-close link" onclick="closeMenu()" style="display: none;">Close</a>
+        </div>
+    </nav>
+
+    <div class="menu-responsive">
+        <nav>
+            <ul class="flex flex-col space-y-4">
+                <li>
+                    <a class="link-lg active">Beranda</a>
+                </li>
+                <li>
+                    <a href="/teknik" class="link-lg">Teknik</a>
+                </li>
+                <li>
+                    <a href="/kota" class="link-lg">Kota</a>
+                </li>
+                <li>
+                    <a href="/motif" class="link-lg">Motif</a>
+                </li>
+                <li>
+                    <a href="/tentang" class="link-lg">Tentang</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="app">
+        <section class="hero">
+            <div class="title font-display font-bold">
+                <div>
+                    <h1>Dari</h1>
+                    <h1>Indonesia</h1>
+                    <h1>Untuk Dunia.</h1>
+                </div>
+            </div>
+            <div class="scroll">
+                <span>
+                    EXPLORE
+                </span>
+                <div class="bar"></div>
+            </div>
+        </section>
+
+        <section class="mb-6">
+            <div class="full-image-content with-title">
+                <div class="image-background">
+                    <img src="/assets/img/pattern.jpg">
+                </div>
+                <div class="source">Topography Pattern on Hero Patterns</div>
+            </div>
+        </section>
+
+        <section class="mb-6" id="apa-itu-batik">
+            <div class="lg:mx-6 mx-2 space-y-4">
+                <div class="section-title space-x-2">
+                    <span class="section">
+                        *
+                    </span>
+                    <div class="text animate-clip">
+                        <span>
+                            Apa
+                        </span>
+                        <span>
+                            itu
+                        </span>
+                        <span>
+                            batik?
+                        </span>
+                    </div>
+                </div>
+                <div class="two-image-content reversed">
+                    <div class="text-image">
+                        <div class="lg:flex flex-col lg:space-y-6 space-y-4">
+                            <div class="flex lg:space-x-2">
+                                <div class="text-lg space-y-2">
+                                    <h4 class="text-2xl font-display text-brown animate-clip">
+                                        <span>
+                                            Batik
+                                        </span>
+                                    </h4>
+                                    <p class="animate-clip">
+                                        <span>
+                                            Batik adalah kain Indonesia bergambar yang pembuatannya secara khusus dengan
+                                            menuliskan atau
+                                            menerakan
+                                            malam pada kain itu.
+                                        </span>
+                                    </p>
+                                    <p class="animate-clip">
+                                        <span>
+                                            Kemudian pengolahannya diproses dengan cara tertentu yang
+                                            memiliki
+                                            kekhasan.
+                                        </span>
+                                    </p>
+                                </div>
+                                <!-- <a href="" class="content-link"></a> -->
+                            </div>
+                            <div class="image">
+                                <img src="/assets/img/batik-wallpaper-2.jpg" class="grayscale">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="just-image">
+                        <img src="/assets/img/batik-wallpaper-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-6 border-top">
+            <div class="lg:mx-6 mx-2 space-y-4">
+                <div class="section-title space-x-2">
+                    <span class="section">
+                        *
+                    </span>
+                    <div class="text animate-clip">
+                        <span>
+                            Etimologi
+                        </span>
+                        <span>
+                            Batik
+                        </span>
+                    </div>
+                </div>
+                <div class="two-image-content">
+                    <div class="text-image">
+                        <div class="flex flex-col lg:space-y-6 space-y-4">
+                            <div class="flex">
+                                <div class="text-lg space-y-2">
+                                    <h4 class="text-2xl font-display text-brown animate-clip">
+                                        <span>
+                                            mbat-tik.
+                                        </span>
+                                    </h4>
+                                    <p class="animate-clip">
+                                        <span>
+                                            Batik berasal dari dua kata yaitu mbat dan tik. Jika digabungkan, mbat dan
+                                            tik
+                                            memiliki arti
+                                            melemparkan atau menuliskan titik berkali-kali.
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="/assets/img/mbat.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="just-image">
+                        <img src="/assets/img/tik.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-6">
+            <div class="lg:mx-6 mx-2 space-y-4">
+                <div class="section-title space-x-2">
+                    <span class="section">
+                        *
+                    </span>
+                    <div class="text animate-clip">
+                        <span>
+                            Teknik
+                        </span>
+                        <span>
+                            Membatik
+                        </span>
+                    </div>
+                </div>
+                <a href="/teknik" class="underline-link text-lg">Lihat Selengkapnya</a>
+                <div class="two-image-content reversed">
+                    <div class="text-image">
+                        <div class="flex flex-col lg:space-y-6">
+                            <div class="flex lg:space-x-2">
+                            </div>
+                            <div class="image">
+                                <img src="/assets/img/teknik-cap.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="just-image">
+                        <img src="/assets/img/teknik-tulis.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="full-image-content with-title">
+                <div class="image-background">
+                    <img src="/assets/img/batik-wallpaper-2.jpg" class="grayscale">
+                </div>
+                <div class="source">Batik Wallpaper on Wallpaper Cave</div>
+            </div>
+        </section>
+
+        <section class="py-6 border-top">
+            <div class="lg:mx-6 space-y-6">
+                <div class="lg:ml-0 ml-2 section-title space-x-2">
+                    <span class="section section-larger">
+                        *
+                    </span>
+                    <div class="text animate-clip">
+                        <span>
+                            Kota
+                        </span>
+                        <span>
+                            Batik
+                        </span>
+                    </div>
+                </div>
+                <a href="/kota" class="lg:ml-0 ml-2 underline-link text-lg">Lihat Semua</a>
+                <div class="card-content space-x-4 lg:space-x-0">
+                    <a href="/kota/pekalongan" class="card-item">
+                        <div class="pict">
+                            <img src="/assets/img/pekalongan-bg.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="title">
+                                Pekalongan
+                            </div>
+                            <div class="placeholder">
+                                Pekalongan
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="/kota/surakarta" class="card-item">
+                        <div class="pict">
+                            <img src="/assets/img/solo-bg.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="title">
+                                Surakarta
+                            </div>
+                            <div class="placeholder">
+                                Surakarta (Solo)
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="/kota/yogyakarta" class="card-item">
+                        <div class="pict">
+                            <img src="/assets/img/yogyakarta-bg.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="title">
+                                Yogyakarta
+                            </div>
+                            <div class="placeholder">
+                                Yogyakarta
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-6 border-top">
+            <div class="lg:mx-6 space-y-6">
+                <div class="lg:ml-0 ml-2 section-title space-x-2">
+                    <span class="section section-larger">
+                        *
+                    </span>
+                    <div class="text animate-clip">
+                        <span>
+                            Motif
+                        </span>
+                        <span>
+                            Batik
+                        </span>
+                    </div>
+                </div>
+                <a href="/motif" class="lg:ml-0 ml-2 underline-link text-lg">Lihat Semua</a>
+                <div class="card-content space-x-4 lg:space-x-0">
+                    <a href="/motif/jlamprang" class="card-item">
+                        <div class="pict">
+                            <img src="/assets/img/motif/motif-jlamprang.jpg" alt="Jlamprang">
+                        </div>
+                        <div class="text">
+                            <div class="title">
+                                Jlamprang
+                            </div>
+                            <div class="placeholder">
+                                Jlamprang
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="/motif/parang-kusumo" class="card-item">
+                        <div class="pict">
+                            <img src="/assets/img/motif/motif-parang-kusumo.jpg" alt="Parang Kusumo">
+                        </div>
+                        <div class="text">
+                            <div class="title">
+                                Parang Kusumo
+                            </div>
+                            <div class="placeholder">
+                                Parang Kusumo
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="/motif/kawung" class="card-item">
+                        <div class="pict">
+                            <img src="/assets/img/motif/motif-kawung.jpg" alt="Kawung">
+                        </div>
+                        <div class="text">
+                            <div class="title">
+                                Kawung
+                            </div>
+                            <div class="placeholder">
+                                Kawung
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="top">
+                <div class="left font-display">
+                    <a href="/" class="logo animate-slide">
+                        <span>
+                            <div class="text-2xl text-loose">Batik</div>
+                            <div class="text-xs font-sans text-looser uppercase">DISCOVER</div>
+                        </span>
+                    </a>
+                    <p class="description text-sm animate-slide">
+                        <span>
+                            Discover batik in an unique way
+                        </span>
+                    </p>
+                </div>
+                <div class="right text-sm">
+                    <div class="links">
+                        <ul>
+                            <li class="heading"><a href="/" class="animate-slide"><span>Batik</span></a></li>
+                            <li><a href="/teknik" class="animate-slide"><span>Teknik</span></a></li>
+                            <li><a href="/motif" class="animate-slide"><span>Motif Batik</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li class="heading"><a href="/kota" class="animate-slide"><span>Kota</span></a></li>
+                            <li><a href="/kota/pekalongan" class="animate-slide"><span>Pekalongan</span></a></li>
+                            <li><a href="/kota/surakarta" class="animate-slide"><span>Surakarta (Solo)</span></a></li>
+                            <li><a href="/kota/yogyakarta" class="animate-slide"><span>Yogyakarta</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li class="heading animate-slide"><span>Bagikan</span></li>
+                            <li>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://batik-discover.web.app/"
+                                    target="_blank" class="animate-slide">
+                                    <span>
+                                        Facebook
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/intent/tweet?url=%20https%3A%2F%2Fbatik-discover.web.app%2F&amp;text=Dari%20Indonesia%20untuk%20Dunia.%20Pelajari%20batik%20di%20Batik%20Discover"
+                                    target="_blank" class="animate-slide">
+                                    <span>
+                                        Twitter
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://t.me/share/url?url=https%3A%2F%2Fbatik-discover.web.app%2F&amp;text=Dari%20Indonesia%20untuk%20Dunia.%20Pelajari%20batik%20di%20Batik%20Discover"
+                                    target="_blank" class="animate-slide">
+                                    <span>
+                                        Telegram
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://api.whatsapp.com/send?text=Dari%20Indonesia%20untuk%20Dunia.%20Pelajari%20batik%20di%20https%3A%2F%2Fbatik-discover.web.app%2F"
+                                    target="_blank" class="animate-slide">
+                                    <span>
+                                        WhatsApp
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                Created and designed with love by Aldioooo.
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="/assets/js/load.js"></script>
+    <script type="text/javascript" src="/assets/js/menu.js"></script>
+    <script type="text/javascript" src="/assets/js/animate-on-scroll.js"></script>
+    <script type="text/javascript" src="/assets/js/grain.js"></script>
+    <!-- <script type="text/javascript" src="/assets/js/momentum.js"></script> -->
+
+    <script type="text/javascript">
+        console.log('%cBatik Discover', 'font-size: x-large;font-family: "Morion", sans-serif;');
+    </script>
+</body>
+
+</html>
